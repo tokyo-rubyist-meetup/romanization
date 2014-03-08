@@ -30,9 +30,6 @@ module Romanize
          xya ya xyu yu xyo yo
          ra ri ru re ro
          xwa wa wi we wo n)
-    ).inject({}) {|hash, (hiragana, roma)|
-      hash[hiragana] = roma
-      hash
-    }
+    ).to_h
   end
 end
