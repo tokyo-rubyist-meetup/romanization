@@ -14,7 +14,16 @@ class TestRomanize < minitest_class
     assert_equal "sinzyuku", romanize("しんじゅく")
   end
 
-  def test_romanize_sokuon
+  def test_romanize_sokuon1
     assert_equal "nattou", romanize("なっとう")
   end
+
+  def test_romanize_sokuon2
+    assert_equal "gakkou", romanize("がっこう")
+  end
+
+  def test_romanize_sokuon3
+    assert_equal "kekka", romanize("けっか")
+  end
+
 end
